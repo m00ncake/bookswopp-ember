@@ -1,0 +1,116 @@
+
+    <div class="header row" id="header">
+        <div class="col-sm-3 logo">
+            <img width="200px" height="28px" src="/assets/images/logo.png">
+        </div>
+        <div class="col-sm-9 navigation">
+            <a class="pull-right item user-icon" href="#"><img src="/assets/images/user-icon.png"></a>
+            <a class="pull-right item" href="#"><img src="/assets/images/message-icon.png"></a>
+            <div class="pull-right item search">
+                <div class="search-zipcode">
+                    <span class="fa fa-search"></span>
+                    <input placeholder="search your zipcode" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row jumbotron">
+        <img class="kids" src="/assets/images/kids.png" alt="picture of kids" />
+        <div class="slider-message">
+            <h1>swopp</h1>
+            <h2 class="text-primary">children's books</h2>
+            <h3>with your neighbors</h3>
+            <button type="button" class="btn btn-primary">start swopping!</button>
+        </div>
+    </div>
+
+    <div class="row features text-primary">
+        <div class="col-sm-3 features-item">
+            <img class="features-icon" src="./assets/images/delivery-icon.gif" />
+            <div class="features-title">
+                <h5>Local Swopp</h5>
+                <p>Blah Blah Blah, books are awesome! Lending books to locals saves dinero~!</p>
+            </div>
+        </div>
+        <div class="col-sm-3 features-item">
+            <img class="features-icon" src="./assets/images/card-icon.gif" />
+            <div class="features-title">
+                <h5>Save Money</h5>
+                <p>Blah Blah Blah, saving money is awesome. The more you lend, the more you save~!</p>
+            </div>
+        </div>
+        <div class="col-sm-3 features-item">
+            <img class="features-icon" src="./assets/images/deal-icon.gif" />
+            <div class="features-title">
+                <h5>Good Cause</h5>
+                <p>Blah Blah Blah, helping people rocks. The more locals you help the warmer you'll feel inside~!</p>
+            </div>
+        </div>
+        <div class="col-sm-3 features-item">
+            <img class="features-icon" src="./assets/images/safe-icon.gif" />
+                <div class="features-title">
+                    <h5>Safe Exchange</h5>
+                    <p>Blah Blah Blah, safe trading is fun. Protect yourself, protect friendly locals around you~!</p>
+                </div>
+        </div>
+    </div>
+    <!--Swapables-->
+    <div class="row swapables-header">
+        <h4 class="pull-left">current swapables</h4>
+        <a class="pull-right text-primary" href="#"><span>view all</span></a>
+    </div>
+    <div class="swapables">
+        <section class="row">
+            {{#each model as |book|}}
+                {{book-list-item book=book}}
+            {{/each}}
+        </section>
+    </div>
+<!--Most Popular-->
+    <h4>most popular</h4>
+    <section class="row">
+        <div class="col-sm-2">
+            <img src="" />
+                <h6>If You Give A Mouse A Cookie</h6>
+                <p>Numeroff</p>
+                <!--Stars & number of reviews here, but have no idea how-->
+                <button onclick=""></button>
+        </div>
+        <div class="col-sm-2">
+            <img src="" />
+                <h6>The Story of Nerdiland</h6>
+                <p>Munro Leaf</p>
+                <!--Stars & number of reviews here, but have no idea how-->
+                <button onclick=""></button>
+        </div>
+        <div class="col-sm-2">
+            <img src="" />
+                <h6>The Poky Little Puppy</h6>
+                <p>Simon Sinek</p>
+                <!--Stars & number of reviews here, but have no idea how-->
+                <button onclick=""></button>
+        </div>
+        <div class="col-sm-2">
+            <img src="" />
+                <h6>How to Babysit a Grandma</h6>
+                <p>Lee Wilder</p>
+                <!--Stars & number of reviews here, but have no idea how-->
+                <button onclick=""></button>
+        </div>
+        <div class="col-sm-2">
+            <img src="" />
+                <h6>One Fish Two Fish</h6>
+                <p>Dr. Seuss</p>
+                <!--Stars & number of reviews here, but have no idea how-->
+                <button onclick=""></button>
+        </div>
+        <div class="col-sm-2">
+            <img src="" />
+                <h6>A Child's First Book of Trump</h6>
+                <p>Claudia Grey</p>
+                <!--Stars & number of reviews here, but have no idea how-->
+                <button onclick=""></button>
+        </div>
+    </section>
+{{outlet}}
