@@ -70,10 +70,10 @@
 <!--Most Popular-->
     <h4>most popular</h4>
     <section class="row">
-        {{#each model as |bookData|}}
-            {{#if bookData.isPopular}}
+        {{#each popularBooks as |bookData|}}
+            {{!-- {{#if bookData.isPopular}} --}}
                 {{book-list-item book=bookData}}
-            {{/if}}
+            {{!-- {{/if}} --}}
         {{/each}}
     </section>
 {{outlet}}
