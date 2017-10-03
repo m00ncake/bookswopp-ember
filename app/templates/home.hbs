@@ -60,57 +60,20 @@
         <h4 class="pull-left">current swapables</h4>
         <a class="pull-right text-primary" href="#"><span>view all</span></a>
     </div>
-    <div class="swapables">
+    <div class="swapables"> {{log 'This is my Model: ' model}}
         <section class="row">
-            {{#each model as |book|}}
-                {{book-list-item book=book}}
+            {{#each model as |bookData|}}
+                {{book-list-item book=bookData}}
             {{/each}}
         </section>
     </div>
 <!--Most Popular-->
     <h4>most popular</h4>
     <section class="row">
-        <div class="col-sm-2">
-            <img src="" />
-                <h6>If You Give A Mouse A Cookie</h6>
-                <p>Numeroff</p>
-                <!--Stars & number of reviews here-->
-                <button onclick=""></button>
-        </div>
-        <div class="col-sm-2">
-            <img src="" />
-                <h6>The Story of Nerdiland</h6>
-                <p>Munro Leaf</p>
-                <!--Stars & number of reviews here-->
-                <button onclick=""></button>
-        </div>
-        <div class="col-sm-2">
-            <img src="" />
-                <h6>The Poky Little Puppy</h6>
-                <p>Simon Sinek</p>
-                <!--Stars & number of reviews here-->
-                <button onclick=""></button>
-        </div>
-        <div class="col-sm-2">
-            <img src="" />
-                <h6>How to Babysit a Grandma</h6>
-                <p>Lee Wilder</p>
-                <!--Stars & number of reviews here-->
-                <button onclick=""></button>
-        </div>
-        <div class="col-sm-2">
-            <img src="" />
-                <h6>One Fish Two Fish</h6>
-                <p>Dr. Seuss</p>
-                <!--Stars & number of reviews here-->
-                <button onclick=""></button>
-        </div>
-        <div class="col-sm-2">
-            <img src="" />
-                <h6>A Child's First Book of Trump</h6>
-                <p>Claudia Grey</p>
-                <!--Stars & number of reviews here-->
-                <button onclick=""></button>
-        </div>
+        {{#each model as |bookData|}}
+            {{#if bookData.isPopular}}
+                {{book-list-item book=bookData}}
+            {{/if}}
+        {{/each}}
     </section>
 {{outlet}}
