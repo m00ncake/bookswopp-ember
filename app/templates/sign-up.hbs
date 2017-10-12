@@ -1,0 +1,52 @@
+<div class="row"> 
+    <div class="col-sm-12 page-title">sign up</div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <div>facebook</div>
+    </div>
+    <div class="col-sm-6">
+        <div class="row">
+            <div>User Info<span class="pull-right">Returning user? Log in here</span></div>
+        </div>
+        <div class="row">
+            <form>
+                <div class="form-group">
+                    <label for="email">email:</label>
+                    {{input type="text" class="form-control" id="email" value=email}}
+                </div>
+                <div class="form-group">
+                    <label for="usr">username:</label>
+                    {{input type="text" class="form-control" id="usr" value=username}}
+                </div>
+                <div class="form-group">
+                    <label for="pwd">password:</label>
+                    {{input type="password" class="form-control" id="pwd" value=password}}
+                </div>
+                <div class="form-group">
+                    <label for="zip">zipcode:</label>
+                    {{input type="number" class="form-control" id="zip" value=zipcode}}
+                </div>
+                <button type="submit" class="btn btn-primary" onclick={{action "createUser"}}>Sign Up</button>
+            </form>
+        </div>
+        {{!-- <div class="row">
+            <div class="col-sm-12">
+                <input type="text" name="email" class=""/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <input type="text" name="username" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <input type="text" name="password" />
+            </div>
+        </div> --}}
+    </div>
+</div>
+
+
+{{outlet}}

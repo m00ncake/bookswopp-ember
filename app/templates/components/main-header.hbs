@@ -1,0 +1,17 @@
+<div class="header row" id="header">
+    <div class="col-sm-3 logo">
+        {{#link-to "home"}}<img width="200px" height="28px" src="/assets/images/logo.png" />{{/link-to}}
+    </div>
+    <div class="col-sm-9 navigation">
+        <a class="pull-right item user-icon" href="#"><img src="/assets/images/user-icon.png"></a>
+        <a class="pull-right item" href="#"><img src="/assets/images/message-icon.png"></a>
+        <div class="pull-right item search">
+            <div class="search-zipcode">
+                <span class="fa fa-search"></span>
+                <input placeholder="search your zipcode" />
+            </div>
+        </div>
+    </div>
+</div>
+
+{{yield}}
