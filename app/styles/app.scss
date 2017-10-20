@@ -1,3 +1,25 @@
 
 @import "ember-bootstrap/bootstrap";
 @import "home";
+
+
+.page-title {
+  height: 100px;
+  text-align: center;
+  background: lightblue;
+  span {
+    line-height: 100px;
+    font-size: 40px;
+    text-transform: capitalize;
+  }
+}
+
+img.facebook-btn {
+  position: absolute;
+  top: 50%;
+  right: 55%;
+}
+
+.sign-up-right {
+  width: 500px;
+}
