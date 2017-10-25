@@ -1,14 +1,18 @@
-<div class="row">
+<div class="row container-fluid page-title-container">
   <div class="col-sm-12 page-title"><span>sign up</span></div>
+  {{!-- <img src="/assets/images/slider-bg-sm.gif" /> --}}
 </div>
-<div class="row">
+<div class="row sign-up-container">
   <div class="sign-up-left">
-    <img class="facebook-btn" src="/assets/images/fb.button.png" />
+    <div class="fb-btn"><span>Continue with Facebook</span></div>
+    {{!-- <img class="facebook-btn" src="/assets/images/fb.button.png" /> --}}
+    <p>We won't post to Facebook without asking.</p>
   </div>
-  <div class="sign-up-right col-sm-offset-6">
+  {{!-- col-sm-offset-6 --}}
+  <div class="sign-up-right">
     <div class="sign-up-container">
-      <div class="row">
-        <div>User Info<span class="pull-right">Returning user? Log in here</span></div>
+      <div class="row form-group-title-container">
+        <div class="col-sm-12 form-group-title">User Info<span class="pull-right">Returning user? <a href="#"><span>Log In Here</span></a></span></div>
       </div>
       <form>
         <div class="form-group">
@@ -27,7 +31,7 @@
           <label for="zip">zipcode:</label>
           {{input type="number" class="form-control" id="zip" value=zipcode}}
         </div>
-        <button type="submit" class="btn btn-primary" onclick= {{action "createUser"}}>Sign Up</button>
+        <button type="submit" class="btn btn-primary sign-up-btn" onclick= {{action "createUser"}}>Sign Up</button>
       </form>
     </div>
   </div>
