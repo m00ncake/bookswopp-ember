@@ -34,6 +34,7 @@ body {
 //   top: 50%;
 //   right: 55%;
 // }
+
 .sign-up-left {
   position: relative;
   display: inline-block;
@@ -44,7 +45,7 @@ body {
   //   top: 1px;
   // }
   .fb-btn {
-    position: absolute;
+    // position: absolute;
     top: -355px;
     left: 150px;
     width: 300px;
@@ -67,7 +68,7 @@ body {
   }
 }
 .sign-up-right {
-  // border: 1px solid pink;  
+  border: 1px solid pink;  
   display: inline-block;
   width: 50%;
   .sign-up-container {

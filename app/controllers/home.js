@@ -6,6 +6,9 @@ export default Ember.Controller.extend({
     actions: {
         gotoSignUp() {
             this.transitionToRoute('sign-up');
+        },
+        select() {
+            console.log('hello');
         }
     }
 });
