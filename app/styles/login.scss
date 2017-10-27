@@ -19,8 +19,7 @@ body {
     }
   }
 }
-
-.sign-up-left {
+.login-left {
   // position: relative;
   // border: 1px solid pink;  
   display: inline-block;
@@ -31,9 +30,9 @@ body {
     // position: absolute;
     width: 300px;
     height: 55px;
-    margin: 130px auto 10px;
     border-radius: 4px;
     background-color: #4367b1;
+    margin: 130px auto 10px;
     span {
       color: white;
       font-size: 16px;
@@ -46,12 +45,12 @@ body {
     color: #999;
   }
 }
-.sign-up-right {
+.login-right {
   // border: 1px solid pink;  
   display: inline-block;
   float: right;
   width: 50%;
-  .sign-up-container {
+  .login-container {
     margin-top: 25px;
     // border: 1px solid green;
     border-left: 3px solid rgb(213, 213, 213);
@@ -80,6 +79,8 @@ body {
       }
     }
     .form-group {
+      margin-top: 40px;
+      margin-bottom: 40px;
       label {
         font-size: 14px;
         color: rgb(93, 93, 93);
@@ -92,11 +93,10 @@ body {
       color: rgb(213, 213, 213);
       }
     }
-    form .sign-up-btn {
+    form .login-btn {
       padding: 10px 30px;
-      border-radius: 20px;
       width: 150px;
-      margin-top: 20px;
+      border-radius: 20px;
       font-size: 18px;
       font-weight: 100;
     }  

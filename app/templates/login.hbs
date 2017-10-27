@@ -2,36 +2,29 @@
   <div class="col-sm-12 page-title"><span>Log In</span></div>
   {{!-- <img src="/assets/images/slider-bg-sm.gif" /> --}}
 </div>
-<div class="row sign-up-container">
-  <div class="sign-up-left">
+<div class="row login-container">
+  <div class="login-left">
     <div class="fb-btn"><span>Continue with Facebook</span></div>
     {{!-- <img class="facebook-btn" src="/assets/images/fb.button.png" /> --}}
     <p>We won't post to Facebook without asking.</p>
   </div>
   {{!-- col-sm-offset-6 --}}
-  <div class="sign-up-right">
-    <div class="sign-up-container">
+  <div class="login-right">
+    <div class="login-container">
       <div class="row form-group-title-container">
-        <div class="col-sm-12 form-group-title">User Info<span class="pull-right">Returning user? <a href="#"><span>Log In Here</span></a></span></div>
+        <div class="col-sm-12 form-group-title">User Info<span class="pull-right">Don't have an account? {{#link-to "sign-up"}}<span>Sign up here</span>{{/link-to}}</span></div>
       </div>
       <form>
         <div class="form-group">
-          <label for="email">email:</label>
-          {{input type="text" class="form-control" id="email" value=email}}
-        </div>
-        <div class="form-group">
-          <label for="usr">username:</label>
+          <label for="usr">username or email</label>
           {{input type="text" class="form-control" id="usr" value=username}}
         </div>
         <div class="form-group">
-          <label for="pwd">password:</label>
+          <label for="pwd">password</label>
           {{input type="password" class="form-control" id="pwd" value=password}}
         </div>
-        <div class="form-group">
-          <label for="zip">zipcode:</label>
-          {{input type="number" class="form-control" id="zip" value=zipcode}}
-        </div>
-        <button type="submit" class="btn btn-primary sign-up-btn" onclick="">Sign Up</button>
+        <button type="submit" class="btn btn-primary login-btn" onclick="">Log In</button>
+        <p>Forgot Password?</p>
       </form>
     </div>
   </div>
